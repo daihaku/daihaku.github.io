@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>『お金を増やす前に、捨てなさい』読者限定・実践サポート3点セット</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF1F4; --paper:#FFFFFF; --ink:#16212E; --sub:#4A5868; --line:#CDD5DD;
+  --accent:#E8B62C; --accent-ink:#16212E; --teal:#2C6E6A; --strike:#B8483E;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0F1720;--paper:#182331;--ink:#EDF1F5;--sub:#A9B6C4;--line:#2C3A4B;--teal:#6BC1BA;--strike:#E27D72}
+}
+:root[data-theme="dark"]{--bg:#0F1720;--paper:#182331;--ink:#EDF1F5;--sub:#A9B6C4;--line:#2C3A4B;--teal:#6BC1BA;--strike:#E27D72}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.9;font-size:16px;-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+h1,h2,h3{line-height:1.5;margin:0 0 .6em;font-weight:900}
+h1{font-size:clamp(28px,7vw,44px);letter-spacing:.01em}
+h2{font-size:clamp(22px,5vw,30px)}
+h3{font-size:clamp(19px,4.4vw,24px)}
+p{margin:0 0 1.2em}
+.sub{color:var(--sub)}
+.btn{display:block;text-align:center;background:var(--accent);color:var(--accent-ink);font-weight:900;font-size:clamp(17px,4.4vw,20px);padding:18px 24px;border-radius:8px;text-decoration:none;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.note{font-size:14px;color:var(--sub);text-align:center;margin-top:12px}
+
+/* hero */
+.hero{padding-top:48px}
+.hero .lead{font-size:17px;margin-top:24px}
+.receipt{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:20px 22px;margin:32px 0;font-size:17px;position:relative}
+.receipt::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:8px;background:linear-gradient(-45deg,transparent 6px,var(--paper) 0) 0 0/12px 8px,linear-gradient(45deg,transparent 6px,var(--paper) 0) 0 0/12px 8px}
+.receipt b{display:block;font-size:13px;color:var(--sub);font-weight:500;margin-bottom:8px;border-bottom:1px dashed var(--line);padding-bottom:8px}
+.receipt s{display:block;text-decoration-color:var(--strike);text-decoration-thickness:2px;color:var(--sub);padding:2px 0}
+.receipt .keep{display:block;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-weight:900;color:var(--teal)}
+
+/* bonuses */
+.bonus{background:var(--paper);border-left:6px solid var(--teal);padding:24px 22px;margin:28px 0;border-radius:0 6px 6px 0}
+.tag{display:inline-block;background:var(--ink);color:var(--bg);font-size:13px;font-weight:700;padding:2px 12px;border-radius:99px;margin-bottom:10px}
+.bonus h3{margin-bottom:.3em}
+.bonus .catch{font-weight:700;margin-bottom:1em}
+ul.plain{margin:0 0 1.2em;padding-left:1.3em}
+ul.plain li{margin:.2em 0}
+.flow{display:grid;gap:0;margin:28px 0;padding:0;list-style:none;counter-reset:s}
+.flow li{counter-increment:s;position:relative;padding:14px 0 14px 52px;font-weight:700}
+.flow li::before{content:counter(s);position:absolute;left:0;top:12px;width:34px;height:34px;border-radius:50%;background:var(--teal);color:var(--paper);display:grid;place-items:center;font-weight:900}
+.flow li:not(:last-child)::after{content:"";position:absolute;left:16px;top:48px;bottom:-14px;width:2px;background:var(--line)}
+.callout{font-weight:900;font-size:1.1em}
+
+/* author, cta, faq */
+.cta{background:var(--paper);border:2px solid var(--ink);border-radius:10px;padding:32px 22px;text-align:center}
+.cta ul{display:inline-block;text-align:left;margin:8px 0 20px;padding-left:1.3em;font-weight:700}
+.warn{border:2px dashed var(--strike);border-radius:8px;padding:24px 22px}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:700;list-style:none;padding-right:28px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:0;font-size:22px;line-height:1.4}
+details[open] summary::after{content:"−"}
+details p,details ul{margin-top:12px;color:var(--sub)}
+.closing{text-align:center}
+.closing .btn{margin:28px 0}
+footer{padding:32px 0 48px;text-align:center;font-size:13px;color:var(--sub)}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="wrap">
+  <h1>本を閉じた今こそ、<br>あなたのお金を変える1枚を。</h1>
+  <p class="lead">『お金を増やす前に、捨てなさい』を最後まで読んでくださったあなたへ。</p>
+  <div class="receipt" aria-hidden="true">
+    <b>捨てるものリスト</b>
+    <s>生活レベル</s><s>なんとなくの支出</s><s>安さの罠</s><s>持ち物</s><s>固定費</s>
+    <span class="keep">残るのは、本当に大切なものだけ。</span>
+  </div>
+  <p>本書で紹介した考え方を、読んで終わらせないための<br><strong>読者限定・実践サポート3点セット</strong>を無料でお渡しします。</p>
+  <a class="btn" href="https://lin.ee/qGjhULg" target="_blank" rel="noopener">無料で3点セットを受け取る</a>
+  <p class="note">登録は無料。今すぐ受け取れます。</p>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>🎁 読者限定・実践サポート3点セット</h2>
+  <p>本を読んで、</p>
+  <ul class="plain">
+    <li>自分のお金の使い方を見直したくなった</li>
+    <li>無駄な支出を減らしたい</li>
+    <li>でも、何から始めればいいか分からない</li>
+    <li>本を閉じたら、結局いつもの生活に戻りそう</li>
+  </ul>
+  <p>そんな方のために、本書の内容を実際の行動に変えるための3つのシートをご用意しました。</p>
+
+  <div class="bonus">
+    <span class="tag">特典1</span>
+    <h3>支出棚卸しチェックリスト</h3>
+    <p class="catch">本書1〜5章の内容を、1枚で見直せる実践シート。</p>
+    <p>本書で扱った、</p>
+    <ul class="plain"><li>生活レベル</li><li>なんとなくの支出</li><li>安さの罠</li><li>持ち物</li><li>固定費</li></ul>
+    <p>を、まとめてチェックできます。難しい家計簿をつける必要はありません。まずは自分の支出を眺めて、<strong>どこからお金が流れているのかを見つける。</strong>本書で学んだことを、最初の行動に変えるための1枚です。</p>
+    <p class="sub" style="margin:0">本編でも、読者が自分の支出を実際に見直せるよう、このチェックリストを特典として案内しています。</p>
+  </div>
+
+  <div class="bonus">
+    <span class="tag">特典2</span>
+    <h3>「安いから」ジャッジフローチャート</h3>
+    <p class="catch">安いから買う、を一度立ち止まって考えるための1枚。</p>
+    <p>本書第3章で紹介した、<strong>譲れない条件を決める → 条件を満たすものに絞る → 最後に価格で決める</strong>という判断の順序を、フローチャートにしました。</p>
+    <p>スーパーでの買い物から、家電、家具、住居選びまで。価格だけに引っ張られず、<strong>自分にとって本当に必要なものなのかを判断するための基準</strong>として使えます。</p>
+    <p class="sub" style="margin:0">本書では、この判断の順序を買い物の場でそのまま使えるように1枚へ整理したものとして紹介しています。</p>
+  </div>
+
+  <div class="bonus">
+    <span class="tag">特典3</span>
+    <h3>1日旅行プランニングシート</h3>
+    <p class="catch">5,000円から始める、経験への投資計画書。</p>
+    <p>お金を減らさないことだけが、お金の使い方ではありません。本書では、日常の支出を見直して生まれた余白を、旅行や新しい経験など、本当に大切なものへ使うことも扱っています。</p>
+    <p>このシートを使って、</p>
+    <ul class="plain"><li>どこへ行くか</li><li>いくら使うか</li><li>何を経験したいか</li><li>そのためにどこからお金を捻出するか</li></ul>
+    <p>を整理してみてください。<strong>節約して終わりではなく、捨てて生まれた余白を、何に使うのか。</strong>そこまで考えるためのシートです。</p>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>3つをまとめて使うと、こうなります</h2>
+  <ol class="flow">
+    <li>支出を見つける</li>
+    <li>無駄な支出を判断する</li>
+    <li>生まれた余白を、本当に使いたい経験へ回す</li>
+  </ol>
+  <p>つまり、この3点セットは単なる節約グッズではありません。</p>
+  <p class="callout">本書を読んで終わらせず、読んだ内容を生活に落とし込むための実践セットです。</p>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>なぜ、この特典を無料で提供するのか？</h2>
+  <p>この本を書いた理由は、投資や副業で大きく稼ぐ方法を教えたいからではありません。むしろ、その前に一度、自分の生活から不要なものを捨ててみてほしいと思ったからです。</p>
+  <p>僕自身、社会人になったばかりで、年収や資産を誇れるような人間ではありません。だからこそ、誰にでも再現できるような、もっと身近なお金の使い方について書きました。</p>
+  <p>生活レベルを上げないこと。<br>なんとなくの支出を減らすこと。<br>安いという理由だけで買わないこと。<br>不要なモノを手放すこと。<br>固定費を見直すこと。</p>
+  <p>こうしたことは、特別な才能や大きな収入がなくても、今日から始められます。</p>
+  <p>本書の最後でも、知っていることと、できていることは別物だと書きました。だからこそ、読んで終わりにしてほしくありません。</p>
+  <p class="callout">本を読んだ今、このタイミングで一つ行動してみる。</p>
+  <p>そのきっかけとして、この3点セットを無料でお渡しします。</p>
+</div>
+</section>
+
+<section id="register">
+<div class="wrap">
+  <div class="cta">
+    <h2>👇 今すぐ無料で受け取る</h2>
+    <p><strong>『お金を増やす前に、捨てなさい』<br>読者限定・実践サポート3点セット</strong></p>
+    <ul><li>支出棚卸しチェックリスト</li><li>「安いから」ジャッジフローチャート</li><li>1日旅行プランニングシート</li></ul>
+    <p class="callout">すべて無料です。</p>
+    <a class="btn" href="https://lin.ee/qGjhULg" target="_blank" rel="noopener">無料で3点セットを受け取る</a>
+    <p class="note">登録後、特典の受け取り方法をご案内します。</p>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="warn">
+    <h2>⚠️ この特典は読者限定・期間限定です</h2>
+    <p>この3点セットは、<strong>『お金を増やす前に、捨てなさい』を読んでくださった方のために用意した特典です。</strong>期間限定での配布となります。</p>
+    <p>「あとで受け取ろう」と思っているうちに、忘れてしまうかもしれません。本を読み終えた今だからこそ、そのまま受け取って、今日一つだけでも実践してみてください。</p>
+    <p class="callout" style="margin:0">本書の内容を、知識だけで終わらせないために。</p>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>よくある質問</h2>
+  <details><summary>Q. 本を読んでいれば誰でも受け取れますか？</summary><p>はい。本書の読者向けに用意した特典です。3点セットを無料でお受け取りいただけます。</p></details>
+  <details><summary>Q. どんな内容が入っていますか？</summary><p>以下の3点です。</p><ul class="plain"><li>支出棚卸しチェックリスト</li><li>「安いから」ジャッジフローチャート</li><li>1日旅行プランニングシート</li></ul><p>本書の内容を実際の生活で使うための実践用資料です。</p></details>
+  <details><summary>Q. お金はかかりますか？</summary><p>かかりません。無料でお受け取りいただけます。</p></details>
+  <details><summary>Q. 本を読んだ後でも使えますか？</summary><p>むしろ、本を読み終えた後に使っていただくことを想定しています。支出を見直し、買い物の判断を整理し、浮いた余白をどこに使うかを考えるための資料です。</p></details>
+  <details><summary>Q. いつまで受け取れますか？</summary><p>期間限定での配布です。終了時期については、配布ページの案内をご確認ください。</p></details>
+</div>
+</section>
+
+<section class="closing">
+<div class="wrap">
+  <h2>本を閉じたら、次は1つだけ行動してください。</h2>
+  <p>本を読んで、なるほど。そう思っていただけたとしても、それだけでは生活は変わりません。</p>
+  <p>支出を一つ見直す。<br>不要なサービスを一つ解約する。<br>買い物の前に一度立ち止まる。<br>そして、浮いたお金を本当にやりたいことに使う。</p>
+  <p>大きなことをする必要はありません。<br><strong>まずは、この3枚を使ってみてください。</strong></p>
+  <h3>🎁 読者限定・実践サポート3点セット</h3>
+  <a class="btn" href="https://lin.ee/qGjhULg" target="_blank" rel="noopener">無料で3点セットを今すぐ受け取る</a>
+  <p>お金を増やす前に、まず捨てる。<br>そして、捨てて生まれた余白を、本当に大切なものに使う。</p>
+  <p class="callout">その最初の一歩を、ここから始めてください。</p>
+</div>
+</section>
+
+<footer><div class="wrap">© 大白</div></footer>
+
+</body>
+</html>
